@@ -12,17 +12,12 @@ Feature: Manage sites
     Then I should see "name 1"
     And I should see "url 1"
     And I should see "description 1"
-
-  Scenario: Delete site
-    Given the following sites:
-      |name|url|description|
-      |name 1|url 1|description 1|
-      |name 2|url 2|description 2|
-      |name 3|url 3|description 3|
-      |name 4|url 4|description 4|
-    When I delete the 3rd site
-    Then I should see the following sites:
-      |Name|Url|Description|
-      |name 1|url 1|description 1|
-      |name 2|url 2|description 2|
-      |name 4|url 4|description 4|
+    
+    Scenario: View all sites
+      Given the following site records
+      | name            | url                           |
+      | Brociety        | http://www.brociety.com/      |
+      | Steep and Cheap | http://www.steepandcheap.com/ |
+      When I go to the sites page
+      Then I should see "Brociety"
+      And I should see "Steep and Cheap"

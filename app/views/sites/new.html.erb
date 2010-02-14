@@ -1,14 +1,14 @@
 <h1>New</h1>
 
 <% form_for @site do |f| %>
-    <%= f.label :name, 'Name' %>:
+<p>    <%= f.label :name, 'Name' %>:
     <%= f.text_field :name %>
-
-    <%= f.label :url, 'Url' %>:
+</p>
+<p>    <%= f.label :url, 'Url' %>:
     <%= f.text_field :url %>
-    
-    <%= f.label :description, 'Description' %>:
-    <%= f.text_field :description %>
-    
+</p>    
+<p>    <%= f.label :description, 'Description' %>:
+    <%= f.text_area :description %>
+</p>    
     <%= submit_tag 'Create' %>
   <% end %>

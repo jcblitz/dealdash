@@ -9,6 +9,9 @@ When /^I delete the (\d+)(?:st|nd|rd|th) site$/ do |pos|
   end
 end
 
-Then /^I should see the following sites:$/ do |expected_sites_table|
-  expected_sites_table.diff!(tableish('table tr', 'td,th'))
+
+Given /^the following (.+) records?$/ do |factory, table|
+  table.hashes.each do |hash|
+      Factory.create(:site, hash)
+  end
 end

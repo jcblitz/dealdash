@@ -90,3 +90,196 @@ Migrating to CreateSites (20100128030718)
 [0m
   [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
   [4;35;1mSQL (1.6ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20100128030718')[0m
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-01-27 23:08:10) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, new, and show):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-27 23:08:12) [GET]
+
+ActionController::RoutingError (No route matches "/site" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-01-27 23:08:13) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, new, and show):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-01-27 23:08:19) [GET]
+Rendering sites/new
+Completed in 114ms (View: 109, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-01-27 23:09:24) [GET]
+Rendering sites/new
+Completed in 17ms (View: 13, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-01-27 23:09:44) [POST]
+  Parameters: {"authenticity_token"=>"bfel8OZf0JDFiprHtPT7Z6qU2P1wupuakaB/p7mqe9M=", "site"=>{"name"=>"Brociety", "url"=>"http://www.brociety.com/", "description"=>"If there\xE2\x80\x99s one thing we\xE2\x80\x99ve learned over the years, it\xE2\x80\x99s that when you drink too much of the Whiskey, there\xE2\x80\x99s only one cure: strappin\xE2\x80\x99 in and riding \xE2\x80\x98til your face freezes off. So we let the Militia have the warm months ... Brociety is here for the endless winter. There\xE2\x80\x99s a lot to consider when it comes to divvying up your funds: dog food, human food, shiny objects, gas for the ol\xE2\x80\x99 rustmobile. All those things add up, making it hard to scrounge the cash for a new board, a jacket your older brother hasn\xE2\x80\x99t worn, or bindings with all the original straps, all while maintaining your steeze. Brociety knows the score. And we\xE2\x80\x99re here to make sure you can get the board, the binders, and the jacket and still have enough leftover to feed X-Ray Dog the SuperBeagle.\r\n\r\nWe give you one insane deal after another on seriously sick snowboard gear. As soon as one deal sells out, a new item pops up to re-stimulate your lusticles. The first deal drops every night at midnight (MT) and sells \xE2\x80\x99til it\xE2\x80\x99s gone (which doesn\xE2\x80\x99t take long, so stay spry). Then another deal slides in and sells out, then another, then another. You become hopelessly hooked, and eventually your eyeballs start to bleed.\r\n\r\nHere's how it goes down:\r\n\r\nWe slap a bitchin' piece of snowboarding gear on our site at a face-melting price.\r\nWe sell it 'til it's gone.\r\nYou leave feeling like you just poached Alta on a pow day.\r\nThe gear arrives fast and you're bustin\xE2\x80\x99 method-airs like it\xE2\x80\x99s nobody\xE2\x80\x99s business.\r\nSign up for Instant Alerts so you always know The Hook. But don't blame us if you overdose.\r\n\r\nAbusers Beware:\r\n\r\nThose who come falsely to Brociety seeking monetary gain, take heed: our agents are many and our reach is long.\r\n\r\nYou can buy up to three (3) of any one product per household.\r\nNo resale. Anywhere.\r\nAbuse will result in punishment of a most unpleasant nature (think Dick Cheney in a thong).\r\n\r\nYou\xE2\x80\x99ve been warned."}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', 'If there’s one thing we’ve learned over the years, it’s that when you drink too much of the Whiskey, there’s only one cure: strappin’ in and riding ‘til your face freezes off. So we let the Militia have the warm months ... Brociety is here for the endless winter. There’s a lot to consider when it comes to divvying up your funds: dog food, human food, shiny objects, gas for the ol’ rustmobile. All those things add up, making it hard to scrounge the cash for a new board, a jacket your older brother hasn’t worn, or bindings with all the original straps, all while maintaining your steeze. Brociety knows the score. And we’re here to make sure you can get the board, the binders, and the jacket and still have enough leftover to feed X-Ray Dog the SuperBeagle.
+
+We give you one insane deal after another on seriously sick snowboard gear. As soon as one deal sells out, a new item pops up to re-stimulate your lusticles. The first deal drops every night at midnight (MT) and sells ’til it’s gone (which doesn’t take long, so stay spry). Then another deal slides in and sells out, then another, then another. You become hopelessly hooked, and eventually your eyeballs start to bleed.
+
+Here''s how it goes down:
+
+We slap a bitchin'' piece of snowboarding gear on our site at a face-melting price.
+We sell it ''til it''s gone.
+You leave feeling like you just poached Alta on a pow day.
+The gear arrives fast and you''re bustin’ method-airs like it’s nobody’s business.
+Sign up for Instant Alerts so you always know The Hook. But don''t blame us if you overdose.
+
+Abusers Beware:
+
+Those who come falsely to Brociety seeking monetary gain, take heed: our agents are many and our reach is long.
+
+You can buy up to three (3) of any one product per household.
+No resale. Anywhere.
+Abuse will result in punishment of a most unpleasant nature (think Dick Cheney in a thong).
+
+You’ve been warned.', '2010-01-28 04:09:44', '2010-01-28 04:09:44')[0m
+Redirected to http://localhost:3000/sites/1
+Completed in 12ms (DB: 0) | 302 Found [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-01-27 23:09:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 15ms (View: 10, DB: 0) | 200 OK [http://localhost/sites/1]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-01-27 23:10:17) [GET]
+  Parameters: {"id"=>"NEW"}
+  [4;36;1mSite Load (0.1ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Site with ID=NEW):
+  app/controllers/sites_controller.rb:17:in `show'
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (60.4ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-01-27 23:10:19) [GET]
+Rendering sites/new
+Completed in 16ms (View: 12, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 09:51:12) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, new, and show):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 09:51:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mSite Load (16.6ms)[0m   [0;1mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 33ms (View: 11, DB: 17) | 200 OK [http://localhost/sites/1]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 09:51:43) [GET]
+
+ActionController::UnknownAction (No action responded to index. Actions: create, new, and show):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:28:14) [GET]
+  [4;36;1mSite Load (0.6ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 19ms (View: 14, DB: 1) | 200 OK [http://localhost/sites]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-14 11:28:17) [GET]
+
+ActionController::RoutingError (No route matches "/new" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-14 11:28:20) [GET]
+
+ActionController::RoutingError (No route matches "/create" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:28:36) [GET]
+  [4;35;1mSite Load (0.5ms)[0m   [0mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/sites]
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 11:28:39) [GET]
+Rendering sites/new
+Completed in 118ms (View: 114, DB: 0) | 200 OK [http://localhost/sites/new]
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 11:29:40) [POST]
+  Parameters: {"authenticity_token"=>"vLBLlx3PsBz6s1U9JOIleA1r022ezuG/J87ykPVzMMk=", "site"=>{"name"=>"Steep And Cheap", "url"=>"http://www.steepandcheap.com/", "description"=>"At Steep and Cheap, we sell premium, core outdoor gear and clothing at prices that are downright criminal.\r\n\r\nHere\xE2\x80\x99s how it works:\r\n\r\n* Steep and Cheap sells one screamin\xE2\x80\x99 deal at a time until it\xE2\x80\x99s gone.\r\n* The deals are fat, so they sell out fast.\r\n* You have to act fast or you\xE2\x80\x99ll miss it, but don\xE2\x80\x99t stress\xE2\x80\x94as soon as one deal sells out, we kick off another.\r\n* It\xE2\x80\x99s back-to-back deals all day long."}, "commit"=>"Create"}
+  [4;36;1mSite Create (43.7ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep And Cheap', 'http://www.steepandcheap.com/', 'At Steep and Cheap, we sell premium, core outdoor gear and clothing at prices that are downright criminal.
+
+Here’s how it works:
+
+* Steep and Cheap sells one screamin’ deal at a time until it’s gone.
+* The deals are fat, so they sell out fast.
+* You have to act fast or you’ll miss it, but don’t stress—as soon as one deal sells out, we kick off another.
+* It’s back-to-back deals all day long.', '2010-02-14 16:29:40', '2010-02-14 16:29:40')[0m
+Redirected to http://localhost:3000/sites/2
+Completed in 84ms (DB: 44) | 302 Found [http://localhost/sites]
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 11:29:40) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 2) [0m
+Rendering sites/show
+Completed in 63ms (View: 58, DB: 0) | 200 OK [http://localhost/sites/2]
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:29:44) [GET]
+  [4;36;1mSite Load (0.5ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://localhost/sites]

@@ -13,6 +13,8 @@ module NavigationHelpers
     when /the new site page/
       new_site_path
 
+    when /the sites page/
+      sites_url
     
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

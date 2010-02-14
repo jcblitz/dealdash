@@ -391,3 +391,435 @@ Processing SitesController#index (for 127.0.0.1 at 2010-01-27 23:04:40) [GET]
 
 
 Processing ApplicationController#index (for 127.0.0.1 at 2010-01-27 23:04:40) [GET]
+  [4;36;1mSite Create (1.2ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-10 01:29:18', '2010-02-10 01:29:18')[0m
+  [4;35;1mSite Create (0.2ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 2', 'url 2', 'description 2', '2010-02-10 01:29:18', '2010-02-10 01:29:18')[0m
+  [4;36;1mSite Create (0.1ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 3', 'url 3', 'description 3', '2010-02-10 01:29:18', '2010-02-10 01:29:18')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 4', 'url 4', 'description 4', '2010-02-10 01:29:18', '2010-02-10 01:29:18')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-09 20:29:18) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-09 20:29:18) [GET]
+  [4;36;1mSite Create (0.8ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 14:41:58', '2010-02-14 14:41:58')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 2', 'url 2', 'description 2', '2010-02-14 14:41:58', '2010-02-14 14:41:58')[0m
+  [4;36;1mSite Create (0.1ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 3', 'url 3', 'description 3', '2010-02-14 14:41:58', '2010-02-14 14:41:58')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 4', 'url 4', 'description 4', '2010-02-14 14:41:58', '2010-02-14 14:41:58')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 09:41:58) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-14 09:41:58) [GET]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 09:54:00) [GET]
+Rendering sites/new
+Completed in 74ms (View: 71, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 09:54:00) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 14:54:00', '2010-02-14 14:54:00')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 3ms (DB: 0) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 09:54:00) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 09:56:22) [GET]
+Rendering sites/new
+Completed in 45ms (View: 42, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 09:56:22) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 14:56:22', '2010-02-14 14:56:22')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 0) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 09:56:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 10:10:24) [GET]
+Rendering sites/new
+Completed in 46ms (View: 42, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 10:10:24) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 15:10:24', '2010-02-14 15:10:24')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 0) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 10:10:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 10:12:32) [GET]
+Rendering sites/new
+Completed in 52ms (View: 49, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 10:12:32) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 15:12:32', '2010-02-14 15:12:32')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 3ms (DB: 1) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 10:12:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 3ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 10:29:41) [GET]
+Rendering sites/new
+Completed in 46ms (View: 43, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 10:29:41) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.6ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 15:29:41', '2010-02-14 15:29:41')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 3ms (DB: 1) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 10:29:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 10:30:11) [GET]
+Rendering sites/new
+Completed in 46ms (View: 42, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 10:30:11) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 15:30:11', '2010-02-14 15:30:11')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 0) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 10:30:11) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 10:30:32) [GET]
+Rendering sites/new
+Completed in 46ms (View: 43, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 10:30:32) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 15:30:32', '2010-02-14 15:30:32')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 10:30:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 10:32:45) [GET]
+Rendering sites/new
+Completed in 46ms (View: 43, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 10:32:46) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 15:32:46', '2010-02-14 15:32:46')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 0) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 10:32:46) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:06:34', '2010-02-14 16:06:34')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:06:34', '2010-02-14 16:06:34')[0m
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:07:23', '2010-02-14 16:07:23')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:07:23', '2010-02-14 16:07:23')[0m
+  [4;36;1mSite Create (0.6ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:10:04', '2010-02-14 16:10:04')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:10:04', '2010-02-14 16:10:04')[0m
+REQUESTING PAGE: GET /sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:10:04) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-14 11:10:04) [GET]
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:10:46', '2010-02-14 16:10:46')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:10:46', '2010-02-14 16:10:46')[0m
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:13:20', '2010-02-14 16:13:20')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:13:20', '2010-02-14 16:13:20')[0m
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:13:52', '2010-02-14 16:13:52')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:13:52', '2010-02-14 16:13:52')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:13:52) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-14 11:13:52) [GET]
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:14:14', '2010-02-14 16:14:14')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:14:14', '2010-02-14 16:14:14')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:14:14) [GET]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-14 11:14:14) [GET]
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:14:43', '2010-02-14 16:14:43')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:14:43', '2010-02-14 16:14:43')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:14:43) [GET]
+Rendering sites/index
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://www.example.com/sites]
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:15:49', '2010-02-14 16:15:49')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', NULL, NULL, '2010-02-14 16:15:49', '2010-02-14 16:15:49')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:15:49) [GET]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://www.example.com/sites]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 11:16:21) [GET]
+Rendering sites/new
+Completed in 90ms (View: 44, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 11:16:21) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 16:16:21', '2010-02-14 16:16:21')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 0) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 11:16:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+  [4;36;1mSite Create (0.4ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', NULL, '2010-02-14 16:16:21', '2010-02-14 16:16:21')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep and Cheap', 'http://www.steepandcheap.com/', NULL, '2010-02-14 16:16:21', '2010-02-14 16:16:21')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:16:21) [GET]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/sites]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 11:20:22) [GET]
+Rendering sites/new
+Completed in 101ms (View: 56, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 11:20:22) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 16:20:22', '2010-02-14 16:20:22')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 11:20:22) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+  [4;36;1mSite Create (0.3ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', NULL, '2010-02-14 16:20:22', '2010-02-14 16:20:22')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep and Cheap', 'http://www.steepandcheap.com/', NULL, '2010-02-14 16:20:22', '2010-02-14 16:20:22')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:20:22) [GET]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/sites]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 11:20:30) [GET]
+Rendering sites/new
+Completed in 97ms (View: 44, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 11:20:30) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 16:20:30', '2010-02-14 16:20:30')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 3ms (DB: 0) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 11:20:30) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+  [4;36;1mSite Create (0.3ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', NULL, '2010-02-14 16:20:30', '2010-02-14 16:20:30')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep and Cheap', 'http://www.steepandcheap.com/', NULL, '2010-02-14 16:20:30', '2010-02-14 16:20:30')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:20:30) [GET]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/sites]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 11:21:12) [GET]
+Rendering sites/new
+Completed in 90ms (View: 44, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 11:21:12) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 16:21:12', '2010-02-14 16:21:12')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 1) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 11:21:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.3ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+  [4;36;1mSite Create (0.4ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', NULL, '2010-02-14 16:21:12', '2010-02-14 16:21:12')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep and Cheap', 'http://www.steepandcheap.com/', NULL, '2010-02-14 16:21:12', '2010-02-14 16:21:12')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:21:12) [GET]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/sites]
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', NULL, '2010-02-14 16:22:08', '2010-02-14 16:22:08')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep and Cheap', 'http://www.steepandcheap.com/', NULL, '2010-02-14 16:22:08', '2010-02-14 16:22:08')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:22:08) [GET]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 14ms (View: 11, DB: 1) | 200 OK [http://www.example.com/sites]
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', NULL, '2010-02-14 16:23:06', '2010-02-14 16:23:06')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep and Cheap', 'http://www.steepandcheap.com/', NULL, '2010-02-14 16:23:06', '2010-02-14 16:23:06')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:23:06) [GET]
+  [4;36;1mSite Load (0.4ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 14ms (View: 11, DB: 1) | 200 OK [http://www.example.com/sites]
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', NULL, '2010-02-14 16:27:32', '2010-02-14 16:27:32')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep and Cheap', 'http://www.steepandcheap.com/', NULL, '2010-02-14 16:27:32', '2010-02-14 16:27:32')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:27:32) [GET]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://www.example.com/sites]
+REQUESTING PAGE: GET /sites/new with {} and HTTP headers {}
+
+
+Processing SitesController#new (for 127.0.0.1 at 2010-02-14 11:27:41) [GET]
+Rendering sites/new
+Completed in 90ms (View: 43, DB: 0) | 200 OK [http://www.example.com/sites/new]
+REQUESTING PAGE: POST /sites with {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"} and HTTP headers {"HTTP_REFERER"=>"/sites/new"}
+
+
+Processing SitesController#create (for 127.0.0.1 at 2010-02-14 11:27:41) [POST]
+  Parameters: {"site"=>{"name"=>"name 1", "url"=>"url 1", "description"=>"description 1"}, "commit"=>"Create"}
+  [4;36;1mSite Create (0.5ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('name 1', 'url 1', 'description 1', '2010-02-14 16:27:41', '2010-02-14 16:27:41')[0m
+Redirected to http://www.example.com/sites/1
+Completed in 2ms (DB: 0) | 302 Found [http://www.example.com/sites]
+REQUESTING PAGE: GET http://www.example.com/sites/1 with {} and HTTP headers {"HTTP_REFERER"=>"/sites"}
+
+
+Processing SitesController#show (for 127.0.0.1 at 2010-02-14 11:27:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSite Load (0.2ms)[0m   [0mSELECT * FROM "sites" WHERE ("sites"."id" = 1) [0m
+Rendering sites/show
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://www.example.com/sites/1]
+  [4;36;1mSite Create (0.4ms)[0m   [0;1mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Brociety', 'http://www.brociety.com/', NULL, '2010-02-14 16:27:41', '2010-02-14 16:27:41')[0m
+  [4;35;1mSite Create (0.1ms)[0m   [0mINSERT INTO "sites" ("name", "url", "description", "created_at", "updated_at") VALUES('Steep and Cheap', 'http://www.steepandcheap.com/', NULL, '2010-02-14 16:27:41', '2010-02-14 16:27:41')[0m
+REQUESTING PAGE: GET http://www.example.com/sites with {} and HTTP headers {}
+
+
+Processing SitesController#index (for 127.0.0.1 at 2010-02-14 11:27:41) [GET]
+  [4;36;1mSite Load (0.3ms)[0m   [0;1mSELECT * FROM "sites" [0m
+Rendering sites/index
+Completed in 2ms (View: 1, DB: 1) | 200 OK [http://www.example.com/sites]
